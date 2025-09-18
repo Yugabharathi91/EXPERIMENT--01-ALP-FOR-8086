@@ -1,11 +1,7 @@
 # EXPERIMENT 01 Assembly Language Program for 8086
 #### Name : Jeeva K
 #### Roll no : 212223230090
-#### Date of experiment : 18/08/2025
-
-
-
-
+#### Date of experiment : 
 
 ## Aim: 
 To Write and execute ALP on fundamental arithmetic and logical operations
