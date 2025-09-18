@@ -1,4 +1,4 @@
-# EXPERIMENT--01-ALP-FOR-8086
+# EXPERIMENT 01 Assembly Language Program for 8086
 #### Name : Jeeva K
 #### Roll no : 212223230090
 #### Date of experiment : 18/08/2025
