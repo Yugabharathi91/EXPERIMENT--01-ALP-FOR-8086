@@ -1,10 +1,12 @@
-# EXPERIMENT 01 Assembly Language Program for 8086
-#### Name : Jeeva K
-#### Roll no : 212223230090
-#### Date : 
 
-## Aim: 
-To Write and execute ALP on fundamental arithmetic and logical operations
+# EXPERIMENT 01 ALP FOR 8086
+### Name : YUGABHARATHI M
+### Roll no : 212224230314
+
+
+
+
+## Aim: To Write and execute ALP on fundamental arithmetic and logical operations
 ## Components required: 8086  emulator 
 ## Theory 
 Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as EMU8086, is an emulator of the program 8086 microprocessor. It is developed with a built-in 8086 assembler. This application is able to run programs on both PC desktops and laptops. This tool is primarily designed to copy or emulate hardware. These include the memory of a program, CPU, RAM, input and output devices, and even the display screen. There are instructions to follow when using this emulator. It can be executed into one of the two ways: backward or forward. There are also examples of assembly source code included. With this, it allows the programming of assembly language, reverse engineering, hardware architecture, and creating miniature operating system (OS). The user interface of 8086 Microprocessor Emulator is simple and easy to manage. There are five major buttons with icons and titles included. These are “Load”, “Reload”, “Step Back”, “Single Step”, and “Run”. Above those buttons is the menu that includes “File”, “View”, “Virtual Devices”, “Virtual Drive”, and “Help”. Below the buttons is a series of choices that are usually in numbers and codes. At the leftmost part is an area called “Registers” with an indication of either “H” or “L”. The other side is divided into two, which enables users to manually reset, debug, flag, etc. What is 8086 emulator emu8086 is an emulator of Intel 8086 (AMD compatible) microprocessor with integrated 8086 assembler and tutorials for beginners. Emulator runs programs like the real microprocessor in step-by-step mode. it shows registers, memory, stack, variables and flags.
@@ -76,105 +78,109 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Addition  of 16 bit ALP 
 ```
-mov ax,2abch
-mov bx,1234h
+org 100h
+
+mov ax,3274h
+mov bx,5324h
 add ax,bx
 ret
 ```
 
+## Output 
+<img width="1354" height="691" alt="image" src="https://github.com/user-attachments/assets/319697cc-578e-421f-bc17-f7a812247da0" />
 
-## Output  
-<img width="1920" height="1020" alt="Screenshot 2025-08-21 131812" src="https://github.com/user-attachments/assets/c71722c5-b13e-452e-a7cd-050c70e8e019" />
-
-## Subtraction   of 16 bit numbers  ALP
+ 
+## Subtraction   of 16 bit numbers  ALP 
 ```
-mov ax,2abch
-mov bx,1234h
-sub ax,[bx]
+org 100h
+
+mov ax,3274h
+mov bx,[3274h]
+sub ax,bx
 ret
 ```
-## Output 
-<img width="1920" height="1020" alt="Screenshot 2025-08-21 133349" src="https://github.com/user-attachments/assets/43f3c82b-e204-4214-be13-f871018953e0" />
+ 
+## Output  
+<img width="1362" height="712" alt="Screenshot 2025-08-18 143105" src="https://github.com/user-attachments/assets/4ed59f7a-77cb-4c62-a55d-cb9d241e0345" />
+
 
 ## Multiplication alp 
-
 ```
-mov cx, 2ABCh   
-mov dx, 1234h   
-
-mov ax, cx      
-mov bx, dx      
-mul bx    
+org 100h  
+mov ax,0778h
+mov bx,0756h
+mul bx
 ret
 ```
 
-## Output  
-<img width="1920" height="1020" alt="Screenshot 2025-08-21 135813" src="https://github.com/user-attachments/assets/1f4b749d-85fb-409a-81dc-2c7cbf427542" />
+ ## Output  
+<img width="1264" height="633" alt="image" src="https://github.com/user-attachments/assets/7713fb2f-3dcc-4ee4-b9c7-37aff82364b6" />
+
 
 
 ## Division alp 
 ```
-mov ax,2abch
-mov bx,[1234h]
+org 100h  
+mov ax,2345h
+mov bx,[5432h]
 div bx
 ret
 ```
 ## Output  
-<img width="1920" height="1020" alt="Screenshot 2025-08-21 132256" src="https://github.com/user-attachments/assets/d007234c-5cbe-4174-af7c-1a63bad22dcf" />
+<img width="1363" height="716" alt="image" src="https://github.com/user-attachments/assets/301c89a9-9e63-444b-af6c-64f032cde1fc" />
 
-
-
-## AND alp
+## AND of 16 bit numbers ALP
 ```
-mov ax,223ch
-mov bx,1234h
+org 100h
+mov ax,643ch
+mov bx,7456h
 and ax,bx
-hlt
+ret
 ```
+## Output
 
-## Output 
-<img width="1920" height="1020" alt="Screenshot 2025-08-21 132749" src="https://github.com/user-attachments/assets/607091c0-b642-4d3d-b215-7098889f96ff" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/1155484e-b89f-4b14-9754-6d86795bbdd2" />
 
 
-## OR alp
+## Or of 16 bit numbers ALP
 ```
-mov ax,223ch
-mov bx,1234h
+org 100h
+mov bx,7cadh
 or ax,[bx]
-hlt
+ret
 ```
+## output
+<img width="1253" height="642" alt="image" src="https://github.com/user-attachments/assets/dde966b3-d99b-4e0f-b5e5-01a98677b193" />
 
-## Output
-<img width="1920" height="1020" alt="Screenshot 2025-08-21 133101" src="https://github.com/user-attachments/assets/722a3ad1-8971-4c39-9ce1-24ddf5b75595" />
 
-
-## NOT alp
+## NOT of 16 bit numbers ALP
 ```
-mov bx,[1234h]
-not bx
-hlt
+org 100h
+mov ax,[7abch]
+not ax
+ret
 ```
+## output
+<img width="1280" height="613" alt="image" src="https://github.com/user-attachments/assets/0c2cbe39-02b3-4f5b-8380-5e94077602e2" />
 
-## Output
-<img width="1920" height="1020" alt="Screenshot 2025-08-21 134148" src="https://github.com/user-attachments/assets/4d4e73c1-ff69-4ed7-9a5a-23184663f531" />
 
-## X-OR alp
+## XOR of 16 bit numbers ALP
 ```
-mov cx, 2ABCh   
-mov dx, 1234h   
-
-mov ax, cx      
-mov bx, dx      
-xor ax,bx    
-hlt
+org 100h
+mov ax,[78ach]
+mov bx,576ah
+xor ax,bx
+ret
 ```
+## Output:
+<img width="1280" height="642" alt="image" src="https://github.com/user-attachments/assets/9d55454c-cdeb-4265-8575-cc44813c30a6" />
 
-## Output
-<img width="1920" height="1020" alt="Screenshot 2025-08-21 141312" src="https://github.com/user-attachments/assets/39078a48-6a23-4501-a70b-01ae66b4b9d6" />
+
 
 ## Result :
+The execution of ALP on fundamental arithmetic and logical operations is successfully completed.
  
-Thus, to write and execute ALP on fundamental arithmetic operations and Logical operations is successful.
+
 
 
 
